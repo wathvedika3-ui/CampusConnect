@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h1 class="logo">CampusConnect</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#" id="loginBtn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1 class="hero-title">CampusConnect</h1>
+        <p class="hero-tagline">Kuch chhoot na jaaye 👀</p>
+
+        <div class="countdown-box">
+            <p class="countdown-label">⏰ Next Up: <span id="nextEventName">TechFest 2026</span></p>
+            <div class="countdown-timer">
+                <div class="time-unit"><span id="days">00</span><small>Days</small></div>
+                <div class="time-unit"><span id="hours">00</span><small>Hrs</small></div>
+                <div class="time-unit"><span id="minutes">00</span><small>Min</small></div>
+                <div class="time-unit"><span id="seconds">00</span><small>Sec</small></div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="stat-number" id="eventCount">0</span>
+                <span class="stat-label">events this week</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="studentCount">0</span>
+                <span class="stat-label">students exploring</span>
+            </div>
+        </div>
+
+        <input type="text" id="searchBar" class="search-bar" placeholder="🔍 Search events...">
+    </div>
+</section>
+
+    <!-- FILTER SECTION -->
+    <section class="filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="departmental">Departmental</button>
+        <button class="filter-btn" data-category="cultural">Cultural</button>
+        <button class="filter-btn" data-category="technical">Technical</button>
+        <button class="filter-btn" data-category="sports">Sports</button>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section class="events" id="events">
+        <div class="events-container" id="eventsContainer">
+            <!-- Event cards yahan JS se inject honge dynamically -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 CampusConnect. Built for students, by students.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
